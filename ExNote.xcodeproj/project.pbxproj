@@ -59,7 +59,6 @@
 		884642D72628466700F00CE9 /* 3ACFABC0-6C66-4D28-B471-16C3D02B5A32_1_102_o.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 884642D62628466700F00CE9 /* 3ACFABC0-6C66-4D28-B471-16C3D02B5A32_1_102_o.jpeg */; };
 		884642DA262846A000F00CE9 /* S__5521426.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 884642D9262846A000F00CE9 /* S__5521426.jpg */; };
 		884642ED262C14C100F00CE9 /* followUserPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884642EC262C14C100F00CE9 /* followUserPhotoViewController.swift */; };
-		884642F2262C5AA500F00CE9 /* S__5652484.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 884642F1262C5AA500F00CE9 /* S__5652484.jpg */; };
 		88A3916226305A1E003BB2B5 /* IMG_2164.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 88A3916126305A1E003BB2B5 /* IMG_2164.PNG */; };
 		88A3916626305A33003BB2B5 /* IMG_2161.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 88A3916426305A33003BB2B5 /* IMG_2161.PNG */; };
 		88A3916726305A33003BB2B5 /* IMG_2163.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 88A3916526305A33003BB2B5 /* IMG_2163.PNG */; };
@@ -88,6 +87,7 @@
 		88A391A326340784003BB2B5 /* followerphotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A391A226340784003BB2B5 /* followerphotoViewController.swift */; };
 		88A391A626341711003BB2B5 /* UserPagePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A391A526341711003BB2B5 /* UserPagePhotoViewController.swift */; };
 		88A391B126385173003BB2B5 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A391B026385173003BB2B5 /* CollectionViewController.swift */; };
+		88A391C2263AA99C003BB2B5 /* S__5652484.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88A391C1263AA99C003BB2B5 /* S__5652484.jpg */; };
 		ECBF24A4BE594E6ABA43063F /* Pods_ExNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771A0708214411FF67FFD5B1 /* Pods_ExNote.framework */; };
 /* End PBXBuildFile section */
 
@@ -148,7 +148,6 @@
 		884642D62628466700F00CE9 /* 3ACFABC0-6C66-4D28-B471-16C3D02B5A32_1_102_o.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3ACFABC0-6C66-4D28-B471-16C3D02B5A32_1_102_o.jpeg"; sourceTree = "<group>"; };
 		884642D9262846A000F00CE9 /* S__5521426.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = S__5521426.jpg; sourceTree = "<group>"; };
 		884642EC262C14C100F00CE9 /* followUserPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = followUserPhotoViewController.swift; sourceTree = "<group>"; };
-		884642F1262C5AA500F00CE9 /* S__5652484.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = S__5652484.jpg; sourceTree = SOURCE_ROOT; };
 		88A3916126305A1E003BB2B5 /* IMG_2164.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_2164.PNG; sourceTree = "<group>"; };
 		88A3916426305A33003BB2B5 /* IMG_2161.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_2161.PNG; sourceTree = "<group>"; };
 		88A3916526305A33003BB2B5 /* IMG_2163.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_2163.PNG; sourceTree = "<group>"; };
@@ -177,6 +176,7 @@
 		88A391A226340784003BB2B5 /* followerphotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = followerphotoViewController.swift; sourceTree = "<group>"; };
 		88A391A526341711003BB2B5 /* UserPagePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPagePhotoViewController.swift; sourceTree = "<group>"; };
 		88A391B026385173003BB2B5 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		88A391C1263AA99C003BB2B5 /* S__5652484.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = S__5652484.jpg; sourceTree = "<group>"; };
 		8B05532EC640AD72B986F489 /* Pods-ExNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExNote.release.xcconfig"; path = "Target Support Files/Pods-ExNote/Pods-ExNote.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -261,7 +261,7 @@
 				88A3916926312254003BB2B5 /* IMG_2161 2.PNG */,
 				884642D32628465C00F00CE9 /* 1628159B-5433-4D00-8609-8CA8BD3B6F64.jpeg */,
 				884642D9262846A000F00CE9 /* S__5521426.jpg */,
-				884642F1262C5AA500F00CE9 /* S__5652484.jpg */,
+				88A391C1263AA99C003BB2B5 /* S__5652484.jpg */,
 				884642D02628464800F00CE9 /* hanko_taihenyokudekimashita.png */,
 				884642CD2628463300F00CE9 /* icons8-コレクションに追加する-64-2.png */,
 				884642CA2628462D00F00CE9 /* icons8-画像無し-64.png */,
@@ -464,6 +464,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88A391C2263AA99C003BB2B5 /* S__5652484.jpg in Resources */,
 				88A3919826312F73003BB2B5 /* iTunesArtwork@3x.png in Resources */,
 				884642D72628466700F00CE9 /* 3ACFABC0-6C66-4D28-B471-16C3D02B5A32_1_102_o.jpeg in Resources */,
 				884642CE2628463300F00CE9 /* icons8-コレクションに追加する-64-2.png in Resources */,
@@ -494,7 +495,6 @@
 				88A3916626305A33003BB2B5 /* IMG_2161.PNG in Resources */,
 				88A3919226312F73003BB2B5 /* Icon-App-60x60@2x.png in Resources */,
 				884642B72628455200F00CE9 /* SignIn.storyboard in Resources */,
-				884642F2262C5AA500F00CE9 /* S__5652484.jpg in Resources */,
 				8846425E2628434800F00CE9 /* searchCollectionViewCell.xib in Resources */,
 				88A3919726312F73003BB2B5 /* iTunesArtwork@2x.png in Resources */,
 				88A3918526312F73003BB2B5 /* iTunesArtwork@1x.png in Resources */,

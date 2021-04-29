@@ -934,6 +934,7 @@
                             <constraint firstItem="1Aq-Ru-mwj" firstAttribute="trailing" secondItem="qJq-EC-qo9" secondAttribute="trailing" constant="8" id="2sK-j2-EBG"/>
                             <constraint firstItem="Kj4-Wu-6D2" firstAttribute="leading" secondItem="1Aq-Ru-mwj" secondAttribute="leading" constant="35" id="359-ij-YXS"/>
                             <constraint firstItem="1Aq-Ru-mwj" firstAttribute="trailing" secondItem="wqn-3n-hTc" secondAttribute="trailing" constant="58.5" id="79M-XK-4pB"/>
+                            <constraint firstItem="eRa-bM-sDo" firstAttribute="leading" secondItem="hsG-rU-XzR" secondAttribute="trailing" constant="16" id="8Em-bp-ruj"/>
                             <constraint firstItem="hsG-rU-XzR" firstAttribute="top" secondItem="1Aq-Ru-mwj" secondAttribute="top" constant="20" id="CME-1n-jky"/>
                             <constraint firstItem="0wN-6n-EDy" firstAttribute="leading" secondItem="ChN-xl-lVZ" secondAttribute="trailing" constant="12" id="DYn-Ud-SUr"/>
                             <constraint firstItem="Bdg-OE-tQC" firstAttribute="leading" secondItem="1Aq-Ru-mwj" secondAttribute="leading" constant="8" id="EOK-ie-13X"/>
@@ -1404,7 +1405,7 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="tJ2-LO-95D"/>
                                         </constraints>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nlR-Z2-Vyq">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nlR-Z2-Vyq">
                                         <rect key="frame" x="37" y="323" width="300" height="73"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1415,7 +1416,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fxe-a4-Y5e">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fxe-a4-Y5e">
                                         <rect key="frame" x="37" y="411" width="300" height="146"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
