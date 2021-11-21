@@ -31,7 +31,7 @@ class UserCommentsViewController: UIViewController, UITableViewDataSource {
         
         loadComments()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -60,7 +60,7 @@ class UserCommentsViewController: UIViewController, UITableViewDataSource {
         
         return cell
     }
-
+    //コメントをロード
     func loadComments() {
         comments = [Comment]()
         let query = NCMBQuery(className: "Comment")

@@ -7,7 +7,7 @@
 
 
 import UIKit
-import NYXImagesKit
+//import NYXImagesKit
 import NCMB
 import UITextView_Placeholder
 import KRProgressHUD

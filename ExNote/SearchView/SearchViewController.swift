@@ -135,6 +135,7 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDa
         print(users[indexPath.row].objectId,"!!!!!!!")
         cell.userImageView.kf.setImage(with: URL(string: userImageUrl), placeholder: UIImage(named: "placeholder.jpg"), options: nil, progressBlock: nil, completionHandler: nil)
         cell.userImageView.layer.cornerRadius = cell.userImageView.bounds.width / 2.0
+        
         cell.userImageView.layer.masksToBounds = true
 
         cell.userNameLabel.text = users[indexPath.row].object(forKey: "displayName") as? String

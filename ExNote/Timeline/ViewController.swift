@@ -41,6 +41,7 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
         timelineTableView.dataSource = self
         timelineTableView.delegate = self
         
+        //ニブを定義づけする
         let nib = UINib(nibName: "TimelineTableViewCell", bundle: Bundle.main)
         timelineTableView.register(nib, forCellReuseIdentifier: "Cell")
         
@@ -133,7 +134,7 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
             
             commentViewController.postId = selectedPost?.objectId
     }else if segue.identifier == "toshowphoto"{
-        let showphoto = segue.destination as! followUserPhotoViewController
+        let showphoto = segue.destination as! followerphotoViewController
         showphoto.photoId = selectedPost?.objectId
     }else{
         print("成功")
@@ -186,7 +187,7 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
         cell.timestampLabel.text = posts[indexPath.row].createDate.toString()
         return cell
     }
- 
+    //
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
             //横からヒョイって出てくるやつ
         let blockaction = UIContextualAction(style: .normal, title: "ブロック") { (action, view, completionHandler) in
@@ -458,7 +459,7 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
                         } else {
                             post.isgood = false
                         }
-                        
+                    
                         // いいねの件数
                         if let likes = likeUsers {
                             post.likeCount = likes.count

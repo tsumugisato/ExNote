@@ -47,7 +47,6 @@ class followCommentViewController: UIViewController, UITableViewDataSource {
         let userImageView = cell.viewWithTag(1) as! UIImageView
         let userNameLabel = cell.viewWithTag(2) as! UILabel
         let commentLabel = cell.viewWithTag(3) as! UILabel
-        // let createDateLabel = cell.viewWithTag(4) as! UILabel
         
         // ユーザー画像を丸く
         userImageView.layer.cornerRadius = userImageView.bounds.width / 2.0
@@ -61,7 +60,7 @@ class followCommentViewController: UIViewController, UITableViewDataSource {
         
         return cell
     }
-
+   
     func loadComments() {
         comments = [Comment]()
         let query = NCMBQuery(className: "Comment")
@@ -93,7 +92,7 @@ class followCommentViewController: UIViewController, UITableViewDataSource {
             }
         })
     }
-    
+    //コメントをつける
     @IBAction func addComment() {
         let alert = UIAlertController(title: "コメント", message: "コメントを入力して下さい", preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: "キャンセル", style: .default) { (action) in

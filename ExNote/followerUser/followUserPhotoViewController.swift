@@ -15,7 +15,8 @@ class followUserPhotoViewController: UIViewController {
     
     
     @IBOutlet var photoimageView:UIImageView!
-
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,6 +26,11 @@ class followUserPhotoViewController: UIViewController {
         
         loadTimeline()
     }
+    
+    @IBAction func pinchLabel(_ sender: Any) {
+        photoimageView.transform = CGAffineTransform(scaleX: (sender as AnyObject).scale, y: (sender as AnyObject).scale)
+    }
+    //
     func loadTimeline(){
         let query = NCMBQuery(className:"Post")
         query?.whereKey("objectId",equalTo:photoId)
@@ -39,9 +45,8 @@ class followUserPhotoViewController: UIViewController {
                 }
             }
         })
-        
-        
     }
+    
 }
 
 

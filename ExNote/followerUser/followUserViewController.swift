@@ -48,7 +48,7 @@ class followUserViewController: UIViewController,UITableViewDataSource,UITableVi
         userImageView.layer.cornerRadius = userImageView.bounds.width * 0.5
         userImageView.layer.masksToBounds = true
 //        loadFollowingInfo()
-        
+  
         userfollowTableView.dataSource = self
         userfollowTableView.delegate = self
         let nib = UINib(nibName: "followUserTableViewCell", bundle: Bundle.main)
@@ -57,28 +57,15 @@ class followUserViewController: UIViewController,UITableViewDataSource,UITableVi
         userQuestionTextView.layer.cornerRadius = 10.0
         userIntroductionTextView.layer.cornerRadius = 10.0
         wakaruu.layer.cornerRadius = 10.0
-//        loadPosts()
-//        loadFollowingInfo()
-//        setRefreshControl()
-//
-//        loadPosts()
-//        setRefreshControl()
         loadFollowingUsers()
         loadFollowingUsers()
         setRefreshControl()
         userfollowTableView.rowHeight = 620
-//        self.postCountLabel.text = String(self.posts.count)
-//        loadPost2()
-        /// kokodeyomu
-//        reloadTableview()
+
         self.userfollowTableView.reloadData()
         self.postCountLabel.text = String(self.posts.count)
        
     }
-//    func loadPost2(){
-//        loadPosts()
-//
-//    }
     
     override func viewWillAppear(_ animated: Bool) {
         print("viewWillAppear()")
@@ -126,12 +113,6 @@ class followUserViewController: UIViewController,UITableViewDataSource,UITableVi
         }
     })
   }
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "touserComments"{
-//            let selectedCommentViewController = segue.destination as! UserCommentsViewController
-//            selectedCommentViewController.postId = selectedPost?.objectId
-//        }
-//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print(posts.count,"8888888888888")
@@ -252,13 +233,11 @@ class followUserViewController: UIViewController,UITableViewDataSource,UITableVi
     @IBAction func wakaru(){
         self.performSegue(withIdentifier: "tosendfollower", sender: nil)
     }
-
+//コメント追加
     @IBAction func Comments(){
         self.performSegue(withIdentifier: "tofollowComments", sender: nil)
     }
-//    @IBAction func showphoto(){
-//        self.performSegue(withIdentifier: "tofollowerphoto", sender: nil)
-//    }
+
     override func prepare(for segue:UIStoryboardSegue,sender:Any?){
         if segue.identifier == "tosendfollower"{
             let vc = segue.destination as! SendfollowerViewController
@@ -281,6 +260,7 @@ class followUserViewController: UIViewController,UITableViewDataSource,UITableVi
         // 遷移させる(このとき、prepareForSegue関数で値を渡す)
         self.performSegue(withIdentifier: "tofollowComments", sender: nil)
     }
+    //
     func didTapshowphotoButton(tableViewCell:UITableViewCell,button:UIButton){
         selectedPost = posts[tableViewCell.tag]
         self.performSegue(withIdentifier: "tofollowerphoto", sender: nil)

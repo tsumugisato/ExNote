@@ -9,12 +9,13 @@ import UIKit
 import Kingfisher
 import NCMB
 
-class followerphotoViewController: UIViewController {
+class followerphotoViewController: UIViewController, UIScrollViewDelegate {
     
     var photoId:String!
     
     
     @IBOutlet var photoimageView:UIImageView!
+    @IBOutlet var photoImageScrollView:UIScrollView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,9 @@ class followerphotoViewController: UIViewController {
         // Do any additional setup after loading the view.
 //        photoimageView = photoId as! UIImageView
 //        photoimageView.kf.setImage(with: URL(string: photoId))
+        photoImageScrollView.minimumZoomScale = 1.0
+        photoImageScrollView.maximumZoomScale = 4.0
+        photoImageScrollView.delegate = self
         loadTimeline()
     }
     func loadTimeline(){
@@ -40,6 +44,9 @@ class followerphotoViewController: UIViewController {
         })
         
         
+    }
+    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+       return photoimageView
     }
 }
 
